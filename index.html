@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="form">
+        <form id="formCadastro" action="resposta.html">
+            <div>
+                <label>
+                    Nome
+                    <input type="text" name="nome">
+                    <span class="erro"></span>
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    E-mail
+                    <input type="text" name=email>
+                    <span class="erro"></span>
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    Cidade
+                    <select name="cidade"><br>
+                        <option value="">   --Select--</option>
+                        <option value="Santa Catarina">Santa Catarina</option>
+                        <option value="São Paulo">São Paulo</option>
+                        <option value="Paraná">Paraná</option>
+                    </select>
+
+                    <span class="erro"></span>
+                
+                </label>
+            </div> 
+            
+            <button type="submit">Cadastrar</button>
+        </form>
+    </section>
+
+
+    <section class="contadores">
+        <div class="campo-contar">
+
+            <div class="valor">
+                   
+            </div>
+
+            <div class="btn-main">
+
+                <div class="btn-down">
+                    
+                </div>
+                <div class="btn-up">
+                   
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
