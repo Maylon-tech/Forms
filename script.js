@@ -64,7 +64,41 @@ formulario.onsubmit = function(evento) {
 
 
 
-let contagem = document.querySelector('.valor')
+let resposta = document.querySelector('.valor')
+let botaocres = document.querySelector('.btn-up')
+let botaodecres = document.querySelector('.btn-down')
+let stop = document.querySelector('.stop')
 
-let contador = 0
+let cont = 0
+
+botaocres.onclick = function() {
+
+    let intervalo = setInterval(function() {
+    cont++
+    resposta.innerText = cont
+
+    },100)
+
+    stop.addEventListener('click', function() {
+
+    clearInterval(intervalo)
+
+    })  
+}
+
+botaodecres.onclick = function() {
+
+    let intervalo02 = setInterval(function() {
+    cont--
+    resposta.innerText = cont
+
+    },100)
+
+    stop.addEventListener('click', function() {
+
+    clearInterval(intervalo02)
+
+    })  
+}
+
 
